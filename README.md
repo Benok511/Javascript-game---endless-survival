@@ -2,3 +2,5 @@ This is a JavaScript game i made for my school project its a topdown game which 
 login / registration 
 
 it has simple physics and easy combat system it is my first project using javascript and was a great tool to help grasp the basics
+
+you can find the raw javascript in the static folder :)

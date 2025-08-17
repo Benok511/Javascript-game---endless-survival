@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dungeons And Wizards</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='game.css')}}">
+    </head>
+    <body>
+        <h1>Trapped!</h1>
+
+        {% if g.user %}
+            <h2>Welcome {{g.user}}</h2>
+
+            <a href="{{url_for('logout')}}" class="button">Logout</a>
+        {%else%}
+        <a href="{{url_for('register')}}" class="button">Register</a>
+
+        <a href="{{url_for('login')}}" class="button">Login</a>
+
+        {% endif %}
+
+      
+        <a href="{{url_for('game')}}" class="button">Play!</a>
+        <a href="{{url_for('view_leaderboard')}}" class="button">Leaderboard</a>
+
+
+
+        
+
+        <h2>About the game</h2>
+
+        <p>In this game you play as a Grand Wizard who is trapped in a purgatory of infinite size your goal is to survive as long as possible while waves of enemies come to kill you.</p>
+        <p>Every 5 rounds there is a Boss Known as the <i>Overseer</i> he is quite slow but you can never escape him as he has sight of you at all time</p>
+        <p>as the rounds progress there are more enemies and they get stronger and smarter.</p>
+        <p>How far will you get?</p>
+
+        <h2>How to Play!</h2>
+        <p>W A S D TO MOVE or you may also use arrow keys</p>
+        <p>you shoot with left click</p>
+        <p>to pick up a power up just run through it but be careful enemies can break them if you are not quick enough</p>
+        <p>to reload your staff just left click again after reaching 0</p>
+
+    </body>
+</html>

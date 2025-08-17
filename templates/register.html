@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dungeons And Wizards</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='game.css')}}">
+    </head>
+    <body>
+        <h1>Register</h1>
+
+        <form action="" method="POST" novalidate>
+
+            {{ form.hidden_tag() }}
+            {{ form.user_id.label }}
+            {{ form.user_id() }}
+            {% for error in form.user_id.errors %}
+                {{error}}
+            {%endfor%}
+            <br>
+            {{ form.password.label }}
+            {{ form.password() }}
+            {% for error in form.password.errors %}
+                {{error}}
+            {%endfor%}
+            <br>
+            {{ form.password2.label }}
+            {{ form.password2() }}
+            {% for error in form.password2.errors %}
+                {{error}}
+            {%endfor%}
+            <br>
+            {{ form.submit() }}
+        
+        
+        
+        </form>
+        
+    </body>
+</html>

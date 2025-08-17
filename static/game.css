@@ -1,0 +1,61 @@
+:root{
+    font-family: sans-serif;
+}
+
+canvas{
+    display: block;
+    background-color: #3d0904;
+    margin: 0 auto;
+
+    
+}
+
+body{
+    background-color:#e85160;
+}
+
+span{
+    margin-right: 1em;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 1em;
+    background-color: palevioletred;
+}
+h1{
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e13e8a;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+
+.invisible{
+    display: none;
+}
+
+.center{
+    margin: 1em 0;
+    text-align: center;
+}
+
+#leaderboard{
+    
+        
+        border-collapse: collapse;
+       
+      
+}
+
+

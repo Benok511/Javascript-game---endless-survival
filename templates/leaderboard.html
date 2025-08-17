@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dungeons And Wizards</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='game.css')}}">
+    </head>
+    <body>
+        <h1>Leaderboard</h1>
+
+        <table id="leaderboard">
+            <tr>
+                <th>Username</th>
+                <th>Score</th>
+            </tr>
+
+            {% for score in scores %}
+            <tr>
+                <td>{{score['user_id']}}</td>
+                <td>{{score['score']}}</td>
+            </tr>
+            {%endfor%}
+
+        </table>
+        
+    </body>
+</html>
